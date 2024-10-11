@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe</title>
-     <!-- LINK DO BOOTSTRAP DO CSS -->
-  <!-- <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<!-- LINK DO BOOTSTRAP DO JS -->
-<!-- <script scr="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-  crossorigin="anonymous"></script>
-  <!-- LINK DO STYLE.CSS -->
-  <link rel="stylesheet" href="login.css">
+    <title>Coffe Login/Cadastro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    
-    
+    <div class="container-fluid login-container" id="container">
+        <div class="row">
+            <!-- Coluna de login/cadastro -->
+            <div class="col-lg-6 form-container">
+                <div class="login-form active" id="login-form">
+                    <h2 class="text-center">Sign In</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email-login" class="form-label">Your email</label>
+                            <input type="email" class="form-control" id="email-login" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-login" class="form-label">Your password</label>
+                            <input type="password" class="form-control" id="password-login" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                        <div class="text-center mt-2">
+                            <a href="#" class="text-muted">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="register-form" id="register-form">
+                    <h2 class="text-center">Sign Up</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email-register" class="form-label">Your email</label>
+                            <input type="email" class="form-control" id="email-register" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username-register" class="form-label">Your username</label>
+                            <input type="text" class="form-control" id="username-register" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-register" class="form-label">Your password</label>
+                            <input type="password" class="form-control" id="password-register" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Coluna azul (informações) -->
+            <div class="col-lg-6 welcome-section" id="welcome-section">
+                <h1>Hello World!</h1>
+                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.</p>
+                <button id="createAccountBtn" class="btn btn-outline-light mt-3">Create Account</button>
+                <button id="signInBtn" class="btn btn-outline-light mt-3 d-none">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
 </body>
 </html>
