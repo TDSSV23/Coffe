@@ -1,0 +1,11 @@
+/* CLASSES NAV */
+.marrom {
+    background-color: brown;
+}
+.branco {
+    background-color: white;
+}
+.bordamarrom {
+    border-top: solid 8px brown;
+    border-bottom: solid 2px brown
+}
