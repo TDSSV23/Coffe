@@ -5,7 +5,7 @@
         }
 
         .navbar {
-            background-color: #D7B9A3; /* Cor de fundo da navbar */
+            background-color: #c6aa97; /* Cor de fundo da navbar */
         }
 
         .navbar-brand img {
@@ -35,4 +35,130 @@
           color: white; /* Cor da fonte do botão */
           border-color: #513623; /* Cor da borda do botão */
         }
+        
+     
+        /* Ajustar o tamanho das imagens para garantir consistência */
+    .carousel-item img {
+        width: 100%; /* A largura da imagem ocupará 100% da coluna */
+        height: 300px; /* Define uma altura fixa para todas as imagens */
+        object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+      }
+  
+      /* Margem no topo de cada slide */
+      .carousel-item {
+        margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+        
+      }
+  
+      /* Personalizar o tamanho do carrossel */
+      #carouselExampleIndicators {
+        width: 80%; /* Ajuste conforme necessário */
+      }
+  
+      /* Centralizar o carrossel */
+      .slider-primeiro {
+        margin-top: 20px; /* Espaçamento superior opcional para o carrossel */
+      }
+  
+      /* Espaçamento entre imagem e borda */
+      .carousel-item .col-md-4 {
+        padding: 15px; /* Adiciona padding ao redor da imagem */
+      }
+
+      /* Centralizar o conteúdo da seção de categorias */
+    .categorias-titulo {
+        text-align: center;
+        margin-top: 30px;
+      }
+  
+      /* Estilizar o título principal */
+      .categorias-titulo h1 {
+        font-size: 3rem;
+        color: #3e2723;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+  
+      /* Efeito de hover no título */
+      .categorias-titulo h1:hover {
+        color: #795548; /* Mudar a cor no hover */
+        transform: scale(1.05); /* Aumenta levemente o tamanho */
+      }
+  
+      /* Estilizar o subtítulo */
+      .categorias-titulo h3 {
+        font-size: 1.5rem;
+        color: #5d4037;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+  
+      /* Efeito de hover no subtítulo */
+      .categorias-titulo h3:hover {
+        color: #8d6e63; /* Mudar a cor no hover */
+    
+      }
+  
+      /* Adicionar um espaçamento no rodapé da seção */
+      .categorias-titulo {
+        margin-bottom: 40px;
+      }
+      .limelight-regular {
+        font-family: "Limelight", sans-serif;
+        font-style: normal;
+      }
+      .tamanholetrapequeno {
+        font-size: small;
+      }
+    }
+    .tamanholetragrande {
+      font-size: larger;
+    }
+    .bg-slide {
+        background-color: #ffddc5;
+    }
+
+    .gallery {
+        --size: 100px;
+        display: grid;
+        grid-template-columns: repeat(6, var(--size));
+        grid-auto-rows: var(--size);
+        margin-bottom: var(--size);
+        place-items: start center;
+        gap: 5px;
+        
+        &:has(:hover) img:not(:hover),
+        &:has(:focus) img:not(:focus){
+          filter: brightness(0.5) contrast(0.5);
+        }
+      
+        & img {
+          object-fit: cover;
+          width: calc(var(--size) * 2);
+          height: calc(var(--size) * 2);
+          clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+          transition: clip-path 0.25s, filter 0.75s;
+          grid-column: auto / span 2;
+          border-radius: 5px;
+      
+          &:nth-child(5n - 1) { 
+            grid-column: 2 / span 2 
+          }
+      
+          &:hover,
+          &:focus {
+            clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+            z-index: 1;
+            transition: clip-path 0.25s, filter 0.25s;
+          }
+          
+          &:focus {
+            outline: 1px dashed black;
+            outline-offset: -5px;
+          }
+        }
+      }
+          
+
+        
+        
  
