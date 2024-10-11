@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Remove a barra de rolagem */
+    
 }
 
 /* INICIO CSS NAV BAR  */
@@ -33,7 +34,8 @@ body {
 }
 
 .navbar {
-    background-color: #D7B9A3; /* Cor de fundo da navbar */
+    background-color: #c6aa97; /* Cor de fundo da navbar */
+    color:#000000;
 }
 
 .navbar-brand img {
@@ -47,7 +49,7 @@ body {
 }
 
 .form-control {
-    background-color: #F2EBE2;  /* Cor de fundo da barra de pesquisa */
+    background-color: #ffddc5;  /* Cor de fundo da barra de pesquisa */
     border: none; /* Remover borda */
     border-radius: 20px; /* Borda arredondada */
 }
@@ -69,7 +71,7 @@ body {
 }
 
 .form-container {
-    background-color: #dcccc2;
+    background-color: #f1ceb6;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -79,7 +81,7 @@ body {
 }
 
 .welcome-section {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #74562d, #9b7440);
     color: white;
     padding: 100px;
     display: flex;
@@ -103,8 +105,9 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #74562d, #9b7440);
     border: none;
+    
 }
 
 .btn-outline-light {
@@ -114,8 +117,14 @@ body {
 }
 
 .btn-outline-light:hover {
-    background-color: white;
-    color: #2575fc;
+    background-color: #c6aa97;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+     background-color: #f3e3d8; /* mudar fundo do campo de email e senha  */
 }
 
 .active {
