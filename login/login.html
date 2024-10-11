@@ -9,10 +9,42 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- Estilo customizado -->
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="l.css">
+    <script src="login.js"></script>
 
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo-coffe-retangular-removebg-preview.png" alt="Coffee Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav"> 
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Criar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container-fluid login-container" id="container">
         <div class="row">
             <!-- Coluna de login/cadastro -->
@@ -57,7 +89,7 @@
             <div class="col-lg-6 welcome-section" id="welcome-section">
                 <h1>Hello World!</h1>
                 <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt.</p>
-                <button id="createAccountBtn" class="btn btn-outline-light mt-3">Create Account</button>
+                <a href="../cadastro/cadastro.html"><button id="createAccountBtn" class="btn btn-outline-light mt-4">Create Account</button></a>
                 <button id="signInBtn" class="btn btn-outline-light mt-3 d-none">Sign In</button>
             </div>
         </div>
@@ -68,7 +100,5 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-    <!-- Link para o arquivo JavaScript externo -->
-    <script src="script.js"></script>
 </body>
 </html>
