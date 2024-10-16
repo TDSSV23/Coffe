@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Login/Cadastro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo-coffe-retangular-removebg-preview.png" alt="Coffee Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Criar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid login-container" id="container">
+        <div class="row">
+
+            <!-- Coluna bem vindo -->
+            <div class="col-lg-6 welcome-section" id="welcome-section">
+                <h1 class="bemVindo">Bem vindo!</h1>
+                <p class="escrita">Seja bem vindo a COFFE! <br>Ainda não possui uma conta, clique no botão abaixo e
+                    crie
+                    sua conta</p>
+                <a class="criarConta" href="../cadastro/cadastro.html"><button id="createAccountBtn"
+                        class="btn btn-outline-light mt-4">Criar conta</button></a>
+
+            </div>
+
+            <!-- Coluna de login -->
+            <div class="col-lg-6 form-container">
+                <div class="login-form active" id="login-form">
+                    <h2 class="text-center">Login</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email-login" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email-login" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-login" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="password-login" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                        <div class="text-center mt-2">
+                            <a href="#" class="text-muted">Esqueceu senha?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
