@@ -79,12 +79,7 @@
         transition: transform 0.3s ease, color 0.3s ease;
       }
   
-      /* Efeito de hover no título */
-      .categorias-titulo h1:hover {
-        color: #795548; /* Mudar a cor no hover */
-        transform: scale(1.05); /* Aumenta levemente o tamanho */
-      }
-  
+      
       /* Estilizar o subtítulo */
       .categorias-titulo h3 {
         font-size: 1.5rem;
@@ -92,11 +87,7 @@
         transition: transform 0.3s ease, color 0.3s ease;
       }
   
-      /* Efeito de hover no subtítulo */
-      .categorias-titulo h3:hover {
-        color: #8d6e63; /* Mudar a cor no hover */
     
-      }
   
       /* Adicionar um espaçamento no rodapé da seção */
       .categorias-titulo {
@@ -109,7 +100,6 @@
       .tamanholetrapequeno {
         font-size: small;
       }
-    }
     .tamanholetragrande {
       font-size: larger;
     }
@@ -324,8 +314,168 @@
         width: 60px;
         height: 60px;
         object-fit: cover;
-        border-radius: 50%; /* Garante que a imagem será perfeitamente redonda */
-        border: 2px solid #ddd; /* Borda ao redor da imagem */
+        border-radius: 50%;
+        border: 2px solid #ddd;
       }
-        
- 
+  
+     /* Background abaixo do carousel */
+.carousel-background {
+  background-image: url('./img/bg-café.jpg'); /* Substitua com a sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  margin-top: 20px;
+  opacity: 0.2;
+}
+
+.bg-titulo-perfis {
+  position: relative; /* Importante para o uso do pseudo-elemento */
+  height: 100px;
+  margin-top: 20px;
+}
+/* Pseudo-elemento para a imagem de fundo com opacidade */
+.bg-titulo-perfis::before {
+  content: '';
+  background-image: url('./img/bg-café.jpg'); /* Substitua com a sua imagem */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Define a opacidade da imagem de fundo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Fica atrás do texto */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+* {
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+.blog-container {
+  max-width: 948px;
+  margin: 4em auto;
+  padding: 4em;
+  background: #edcfb9;
+  border-radius: 1em;
+}
+
+section.blog-cards {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(3, 256px);
+  grid-template-rows: repeat(12, 196px);
+  grid-gap: 16px;
+  
+}
+
+.blog-card {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+}
+
+.blog-vertical {
+  flex-direction: column;
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.blog-horizontal {
+  flex-direction: row;
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.blog-reverse-horizontal {
+  flex-direction: row-reverse;
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.blog-horizontal .blog-card__img, .blog-reverse-horizontal .blog-card__img {
+  height: 100%;
+}
+
+.blog-vertical .blog-card__img {
+  width: 100%;
+}
+
+.blog-card__content {
+  padding: 16px;
+}
+
+.blog-card__type {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  color: palevioletred;
+  padding-bottom: 0.5em;
+}
+
+.blog-card__title {
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  transition: all 0.25s ease;
+}
+
+.blog-card__date {
+  font-size: 14px;
+  padding-bottom: 0.5em;
+  opacity: 0.3;
+}
+
+.blog-card__time-to-read {
+  font-style: italic;  
+}
+
+.blog-card__excerpt {
+  font-size: 16px;
+  padding-bottom: 0.5em;
+}
+.blog-card__tags {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.blog-tag {
+  display: inline-block;
+  background: papayawhip;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 12px;
+  color: palevioletred;
+  user-select: none;
+  cursor: pointer;
+}
+
+.blog-tag:hover {
+  background: #f2d1a7;
+}
+
+
+.blog-tag:active {
+  background: #e6b87a;
+}
+
+.blog-tag i {
+  margin-right: 4px;
+}
+
+      
+      
