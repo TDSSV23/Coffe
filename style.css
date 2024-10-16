@@ -40,8 +40,9 @@
         /* Ajustar o tamanho das imagens para garantir consistência */
     .carousel-item img {
         width: 100%; /* A largura da imagem ocupará 100% da coluna */
-        height: 300px; /* Define uma altura fixa para todas as imagens */
+        height: 150px; /* Define uma altura fixa para todas as imagens */
         object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+        
       }
   
       /* Margem no topo de cada slide */
@@ -53,6 +54,7 @@
       /* Personalizar o tamanho do carrossel */
       #carouselExampleIndicators {
         width: 80%; /* Ajuste conforme necessário */
+        
       }
   
       /* Centralizar o carrossel */
@@ -63,6 +65,7 @@
       /* Espaçamento entre imagem e borda */
       .carousel-item .col-md-4 {
         padding: 15px; /* Adiciona padding ao redor da imagem */
+       
       }
 
       /* Centralizar o conteúdo da seção de categorias */
@@ -311,11 +314,18 @@
       }
 
       .profile-img {
-        width: 60px;
-        height: 60px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 2px solid #ddd;
+        width: 120px; /* Tamanho da imagem, pode ser ajustado conforme necessário */
+        height: 120px; /* Certifica-se de que a altura e a largura são iguais */
+        border-radius: 50%; /* Faz a imagem ficar completamente redonda */
+        object-fit: cover; /* Garante que a imagem se ajuste ao círculo sem distorção */
+        border: 3px solid #ddd; /* Adiciona uma borda leve para estética (opcional) */
+      }
+      .profile-container {
+        text-align: center; /* Centraliza o texto e a imagem */
+        margin: 0 70px; /* Espaçamento horizontal entre as imagens */
+      }
+      .carousel-inner {
+        padding: 5px 0; /* Adiciona espaço entre a parte superior/inferior do carousel e as imagens */
       }
   
      /* Background abaixo do carousel */
@@ -348,12 +358,7 @@
   z-index: 0; /* Fica atrás do texto */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lato:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
-* {
-  font-family: Lato, sans-serif;
-  box-sizing: border-box;
-}
 
 
 
@@ -413,7 +418,7 @@ section.blog-cards {
 }
 
 .blog-card__content {
-  padding: 16px;
+  padding: 10px;
 }
 
 .blog-card__type {
@@ -476,6 +481,73 @@ section.blog-cards {
 .blog-tag i {
   margin-right: 4px;
 }
+
+.footer {
+  padding: 40px 0;
+  background-color: #c6aa97;
+  color: white;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer li {
+  display: inline-block; /* Change to inline-block for horizontal layout */
+  padding: 0 10px;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+.footer .footer-break{
+height:2px;
+border-width:0;
+color:gray;
+background-color:white
+  }
 
       
       
