@@ -1,0 +1,179 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: auto; /* Garante rolagem vertical */
+}
+
+
+
+/* INICIO CSS NAV BAR  */
+
+.navbar-brand img {
+    height: 40px; /* Altura do logo */
+    margin-right: 10px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Alinha a navbar à direita */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Garante que a navegação fique à direita */
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #5a4949; /* Cor quando o link é sobrevoado */
+}
+
+
+body {
+    background-color: #D7B9A3; /* Cor de fundo  */
+    font-family: 'Arial', sans-serif; /* Fonte  */
+}
+
+.navbar {
+    background-color: #c6aa97; /* Cor de fundo da navbar */
+    color:#000000;
+}
+
+.navbar-brand img {
+    height: 40px; /* Altura do logo */
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #513623;  /* Cor do texto dos links da navbar */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.form-control {
+    background-color: #ffddc5;  /* Cor de fundo dos campos  */
+    border: none; /* Remover borda */
+    border-radius: 20px; /* Borda arredondada */
+}
+
+
+
+/* FIM CSS NAV BAR */
+
+
+
+.login-container {
+    min-height: 100vh; /* Garante que o container ocupe ao menos a tela inteira */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+    padding: 20px; /* Adiciona um espaçamento interno para prevenir que o conteúdo toque as bordas */
+}
+
+
+.form-container {
+    background-color: #f1ceb6;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.6s ease-in-out;
+    
+}
+
+.welcome-section {
+    background: linear-gradient(45deg, #74562d, #9b7440);
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.6s ease-in-out;
+    
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #74562d, #9b7440);
+    border: none;
+    
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+    width: 85%;
+}
+
+.btn-outline-light:hover {
+    background-color: #c6aa97;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.active {
+    display: block;
+}
+
+.register-form {
+    display: none;
+}
+
+.sign-up-mode .welcome-section {
+    transform: translateX(-100%);
+}
+
+.sign-up-mode .form-container {
+    transform: translateX(100%);
+}
+
+.sign-up-mode .register-form {
+    display: block;
+}
+
+.sign-up-mode .login-form {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .welcome-section {
+        display: block; /* Garante que a seção de boas-vindas seja exibida em todas as telas */
+    }
+
+    .form-container {
+        padding: 20px; /* Ajusta o espaçamento em dispositivos menores */
+    }
+}
+
+.bemVindo{
+    margin-top: -18%;
+    font-size: 25px;
+}
+
+.escrita{
+    font-size: 20px;
+    padding-top: 10%;
+}
+
+.criarConta{
+    margin-top: 4%;
+}
