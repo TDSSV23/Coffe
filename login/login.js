@@ -23,3 +23,8 @@ signInBtn.addEventListener('click', () => {
     signInBtn.classList.add('d-none');
     createAccountBtn.classList.remove('d-none');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.overflow = 'auto'; // Garante que o body só tenha rolagem quando necessário
+});
+

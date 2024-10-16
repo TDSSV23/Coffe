@@ -1,10 +1,14 @@
+
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Remove a barra de rolagem */
-    
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    overflow-y: auto; /* Garante rolagem vertical */
 }
+
+
 
 /* INICIO CSS NAV BAR  */
 
@@ -29,8 +33,8 @@ html, body {
 
 
 body {
-    background-color: #D7B9A3; /* Cor de fundo semelhante à imagem */
-    font-family: 'Arial', sans-serif; /* Fonte semelhante à imagem */
+    background-color: #D7B9A3; /* Cor de fundo  */
+    font-family: 'Arial', sans-serif; /* Fonte  */
 }
 
 .navbar {
@@ -49,7 +53,7 @@ body {
 }
 
 .form-control {
-    background-color: #ffddc5;  /* Cor de fundo da barra de pesquisa */
+    background-color: #ffddc5;  /* Cor de fundo dos campos  */
     border: none; /* Remover borda */
     border-radius: 20px; /* Borda arredondada */
 }
@@ -61,14 +65,14 @@ body {
 
 
 .login-container {
-    height: 100vh;
+    min-height: 100vh; /* Garante que o container ocupe ao menos a tela inteira */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.6s ease-in-out;
-    margin-top: -4%;
-  
+    padding: 20px; /* Adiciona um espaçamento interno para prevenir que o conteúdo toque as bordas */
 }
+
 
 .form-container {
     background-color: #f1ceb6;
@@ -124,7 +128,6 @@ body {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-     background-color: #f3e3d8; /* mudar fundo do campo de email e senha  */
 }
 
 .active {
@@ -150,3 +153,15 @@ body {
 .sign-up-mode .login-form {
     display: none;
 }
+
+@media (max-width: 768px) {
+    .welcome-section {
+        display: block; /* Garante que a seção de boas-vindas seja exibida em todas as telas */
+    }
+
+    .form-container {
+        padding: 20px; /* Ajusta o espaçamento em dispositivos menores */
+    }
+}
+
+
