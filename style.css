@@ -319,5 +319,13 @@
             border-radius: 20px;
           
       }
+
+      .profile-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%; /* Garante que a imagem será perfeitamente redonda */
+        border: 2px solid #ddd; /* Borda ao redor da imagem */
+      }
         
  
