@@ -319,11 +319,12 @@
         border-radius: 50%; /* Faz a imagem ficar completamente redonda */
         object-fit: cover; /* Garante que a imagem se ajuste ao círculo sem distorção */
         border: 3px solid #ddd; /* Adiciona uma borda leve para estética (opcional) */
-      }
-      .profile-container {
+    }
+    .profile-container {
         text-align: center; /* Centraliza o texto e a imagem */
-        margin: 0 70px; /* Espaçamento horizontal entre as imagens */
-      }
+        margin: 0 30px; /* Espaçamento horizontal entre as imagens */
+    }
+    
       .carousel-inner {
         padding: 5px 0; /* Adiciona espaço entre a parte superior/inferior do carousel e as imagens */
       }
