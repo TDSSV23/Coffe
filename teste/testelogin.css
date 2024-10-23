@@ -182,7 +182,7 @@ input {
 	max-width: 100%;
 	min-height: 480px;
 	height: 80vh;
-	border-radius: 20px; /*  Adicionando cantos arredondados */
+	border-radius: 50px; /*  Adicionando cantos arredondados */
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Adicionando sombra para efeito mais suave */
 	margin-top: 70px; /* Adiciona um espaçamento para o conteúdo abaixo da navbar */
 	display: flex;
@@ -272,6 +272,7 @@ input {
 	width: 200%;
 	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
+	
 }
 
 .container.right-panel-active .overlay {
@@ -318,7 +319,7 @@ input {
 
 .social-container a {
 	border: 1px solid #DDDDDD;
-	border-radius: 50%;
+	border-radius: 10%;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -367,7 +368,18 @@ select {
 	border-radius: 4px;
 	background-color: #eee;
   }
+
+.escrita{
+	font-size: medium;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	margin-top: 13%;
+	
+}
   
+.sejatitulo{
+	margin-top: 15%;
+}
 
  
  

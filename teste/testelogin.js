@@ -128,3 +128,4 @@ countries.forEach(country => {
 	option.textContent = country;
 	countrySelect.appendChild(option);
 });
+
