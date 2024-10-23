@@ -1,30 +1,24 @@
 
         body {
-            background-color: #D7B9A3; /* Cor de fundo semelhante à imagem */
+            background-color: #D5BDAF; /* Cor de fundo semelhante à imagem */
             font-family: 'Arial', sans-serif; /* Fonte semelhante à imagem */
         }
-
         .navbar {
-            background-color: #c6aa97; /* Cor de fundo da navbar */
+            background-color: #A67C6B; /* Cor de fundo da navbar */
         }
-
         .navbar-brand img {
             height: 40px; /* Altura do logo */
             margin-right: 10px;
         }
-        
         .navbar-nav .nav-link {
             color: #513623;  /* Cor do texto dos links da navbar */
             font-weight: bold; /* Texto em negrito */
         }
-
         .form-control {
-            background-color: #F2EBE2;  /* Cor de fundo da barra de pesquisa */
+            background-color: #d0c9c1;  /* Cor de fundo da barra de pesquisa */
             border: none; /* Remover borda */
             border-radius: 20px; /* Borda arredondada */
         }
-
-
         .btn-outline-success {
           color: #513623; /* Cor do botão */
           border-color: #513623; /* Cor da borda do botão */
@@ -35,8 +29,6 @@
           color: white; /* Cor da fonte do botão */
           border-color: #513623; /* Cor da borda do botão */
         }
-        
-     
         /* Ajustar o tamanho das imagens para garantir consistência */
     .carousel-item img {
         width: 100%; /* A largura da imagem ocupará 100% da coluna */
@@ -44,24 +36,20 @@
         object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
         
       }
-  
       /* Margem no topo de cada slide */
       .carousel-item {
         margin-top: 20px; /* Ajuste a margem superior conforme necessário */
         
       }
-  
       /* Personalizar o tamanho do carrossel */
       #carouselExampleIndicators {
         width: 80%; /* Ajuste conforme necessário */
         
       }
-  
       /* Centralizar o carrossel */
       .slider-primeiro {
         margin-top: 20px; /* Espaçamento superior opcional para o carrossel */
       }
-  
       /* Espaçamento entre imagem e borda */
       .carousel-item .col-md-4 {
         padding: 15px; /* Adiciona padding ao redor da imagem */
@@ -107,7 +95,7 @@
       font-size: larger;
     }
     .bg-slide {
-        background-color: #ffddc5;
+        background-color: #8C6C5A;
     }
 
     .gallery {
@@ -307,7 +295,7 @@
       }
 
       .card-slide {
-            background-color: #f6d4bc; /* Cor de fundo semelhante à imagem */
+            background-color: #a67c6b90; /* Cor de fundo semelhante à imagem */
             padding: 20px;
             border-radius: 20px;
           
