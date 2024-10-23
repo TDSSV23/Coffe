@@ -17,18 +17,14 @@
 	/* Garante que a navegação fique à direita */
 }
 
-
 .navbar-nav .nav-link:hover {
 	color: #5a4949;
 	/* Cor quando o link é sobrevoado */
 }
 
-
 body {
-	background-color: #D7B9A3;
-	/* Cor de fundo  */
-	font-family: 'Arial', sans-serif;
-	/* Fonte  */
+	background-color: #D7B9A3;/* Cor de fundo  */
+	font-family: 'Arial', sans-serif;/* Fonte  */
 }
 
 .navbar {
@@ -40,33 +36,26 @@ body {
 	position: fixed;/* Fixa no topo */
 	top: 0;
 	left: 0;
-	z-index: 1000;
-	/* Garante que fique sobre o conteúdo */
+	z-index: 1000;/* Garante que fique sobre o conteúdo */
 }
 
 .navbar-brand img {
-	height: 40px;
-	/* Altura do logo */
+	height: 40px;/* Altura do logo */
 	margin-right: 10px;
 }
 
 .navbar-nav .nav-link {
-	color: #513623;
-	/* Cor do texto dos links da navbar */
-	font-weight: bold;
-	/* Texto em negrito */
+	color: #513623;/* Cor do texto dos links da navbar */
+	font-weight: bold;/* Texto em negrito */
 }
 
 .container-fluid {
 	background-color: #c6aa97;
 }
 
-/* Manter responsividade */
 .navbar-toggler {
 	margin-right: 10px;
 }
-
-
 
 /* FIM CSS NAV BAR */
 
@@ -76,15 +65,12 @@ body {
 	box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
-	/* Impede rolagem horizontal */
-	overflow-y: auto;
-	/* Garante rolagem vertical */
+	overflow-x: hidden;/* Impede rolagem horizontal */
+	overflow-y: auto;/* Garante rolagem vertical */
 
 }
 
@@ -99,10 +85,6 @@ body {
 	margin: -20px 0 50px;
 	margin: 0;
 	padding: 0;
-	
-	
-	
-
 }
 
 h1 {
@@ -138,16 +120,18 @@ button {
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
 	margin-top: 15px;
-	padding: 10px 20px;
-	border: 2px solid white;/* Define uma borda branca */
+	border: 1px solid white;/* Define uma borda branca */
 	background-color: #ff4b2b;
 	cursor: pointer;
 	transition: 0.3s;
+	margin-top: 15px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	border-color: #f3f5f3;
 }
 
 button:hover {
@@ -275,9 +259,9 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #c6aa97;
+	background: -webkit-linear-gradient(to right, #c6aa97, #e8c8b3);
+	background: linear-gradient(to right, #c6aa97,#e8c8b3);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -355,8 +339,6 @@ footer {
 	z-index: 999;
 }
 
-
-
 .container-fluid {
 	padding: 0;
 	/* Remove qualquer padding adicional */
@@ -377,17 +359,15 @@ footer {
 	display: block;
 }
 
-/* Ajuste adicional para os botões */
-button {
-	margin-top: 15px;
-	padding: 10px 20px;
-	border-radius: 20px;
-	border: none;
-	background-color: #ff4b2b;
-	color: white;
-	cursor: pointer;
-	transition: 0.3s;
-}
+select {
+	width: 100%;
+	padding: 10px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #eee;
+  }
+  
 
  
  
